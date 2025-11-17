@@ -42,6 +42,11 @@
             <img src="bilder/fremtiden.jpeg" alt="fremtiden">
         </section>
 
+        <section id="accordion" class="kort">
+            <button id="lesmer">Les mer</button>
+            <p></p>
+        </section>
+
         <div class="container">
 
             <section id="hva">
@@ -135,6 +140,17 @@
 
 
     </main>
+
+    <script>
+        const knappElm = document.getElementById("lesmer")
+        const accordionElm = document.getElementById("accordion")
+
+        function accordion(){
+            accordionElm.classList.toggle("kort")
+        }
+        knappElm.addEventListener("click",accordion)
+
+    </script>
 
 </body>
 
