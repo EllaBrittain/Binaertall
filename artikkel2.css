@@ -3,6 +3,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .s1 {
@@ -35,4 +36,30 @@ p {
 img{
     border-radius: 15px;
 
+}
+
+.s2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.A1, .A2 {
+    background-color: lightblue;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+li {
+    font-size: 23px;
+    margin: 5px 5px;
 }
