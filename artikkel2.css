@@ -63,3 +63,13 @@ li {
     font-size: 23px;
     margin: 5px 5px;
 }
+
+.s3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s3 > img {
+    width: 100%;
+}
