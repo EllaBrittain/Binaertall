@@ -37,11 +37,33 @@
     </header>
     <main>
         <section class="reklame">
-            <h1>hei</h1>
+            <div class="reklamelogo">annonse</div>
+            <img id="reklamebilde" src="" alt="reklame">
         </section>
 
         <div class="linje"></div>
 
+        <section class="artikler">
+            <article class="stor"></article>
+            <article class="liten"></article>
+            <article class="liten"></article>
+            <article class="liten"></article>
+            <article class="medium">
+                <div class="reklamelogo">annonse</div>
+                <img id="reklamebilde" src="" alt="reklame">
+            </article>
+            <article class="liten"></article>
+            <article class="stor"></article>
+            <article class="liten"></article>
+
+        </section>
+
+        <div class="linje"></div>
+
+         <section class="reklame">
+            <div class="reklamelogo">annonse</div>
+            <img id="reklamebilde" src="" alt="reklame">
+        </section>
 
 
     </main>
@@ -50,6 +72,14 @@
 
 
     </footer>
+
+    <script>
+        // Tilfeldig tall mellom 1 og 3
+        const randomNumber = Math.floor(Math.random() * 3) + 1;
+
+        console.log(randomNumber);
+        document.getElementById("reklamebilde").src = "bilder/reklame" + randomNumber + ".jpg"
+    </script>
 
 </body>
 
