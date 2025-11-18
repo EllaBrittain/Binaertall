@@ -43,8 +43,16 @@
         </section>
 
         <section id="accordion" class="kort">
+            <h2 id="korttitle">Kortversjonen</h2>
             <button id="lesmer">Les mer</button>
-            <p></p>
+            <p>Forskere fra Google DeepMind og Yale har utviklet AI-modellen C2S-Scale 27B, som kan analysere
+                enkeltcelledata og foreslå nye kombinasjoner av kreftbehandlinger. Modellen oppdaget en mulig behandling
+                med silmitasertib + interferon, som kan gjøre «kalde» svulster mer synlige for immunforsvaret. Dette
+                regnes som et gjennombrudd fordi AI ikke bare analyserer data, men skaper ny vitenskapelig kunnskap.
+                Hvis funnene bekreftes i kliniske studier, kan dette åpne for nye terapier mot vanskelig behandlingsbar
+                kreft. Teknologien kan også få betydning i Norge, både for forskning, bioteknologi og helsepolitikk.
+                Samtidig gjenstår utfordringer knyttet til etikk, data og regulering. Fremover kan AI bli en reel
+                medoppdager i medisinsk forskning.</p>
         </section>
 
         <div class="container">
@@ -145,10 +153,10 @@
         const knappElm = document.getElementById("lesmer")
         const accordionElm = document.getElementById("accordion")
 
-        function accordion(){
+        function accordion() {
             accordionElm.classList.toggle("kort")
         }
-        knappElm.addEventListener("click",accordion)
+        knappElm.addEventListener("click", accordion)
 
     </script>
 
