@@ -13,7 +13,7 @@ main {
 .s1 {
     max-width: 100000px;
     width: 100%;
-    margin: 0;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
