@@ -52,5 +52,35 @@ li {
 p {
     line-height: 3;
 }
+#accordion {
+    background: rgb(30,30,30);
+    border-radius: 20px;
+    padding: 24px;
+    margin: 40px auto;
+    max-width: 650px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    max-height: 1200px;
+}
 
+#accordion.kort {
+    max-height: 210px;
+}
 
+#korttitle {
+    color: rgb(240,240,240);
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+#lesmer:hover {
+    background: rgb(90,90,90);
+}
+
+#accordion ul {
+    font-size: 18px;
+    line-height: 2;
+    color: rgb(235,235,235);
+    margin-top: 10px;
+}

@@ -43,8 +43,22 @@
         </section>
 
         <section id="accordion" class="kort">
+            <h2 id="korttitle">Kortversjonen</h2>
             <button id="lesmer">Les mer</button>
-            <p></p>
+            <ul>
+                <li>AI-modellen <strong>C2S-Scale 27B</strong> analyserer enkeltcelledata og foreslår nye kombinasjoner
+                    av kreftbehandling.</li>
+                <li>Modellen fant kombinasjonen <strong>silmitasertib + interferon</strong> som kan gjøre «kalde»
+                    svulster mer synlige for immunforsvaret.</li>
+                <li>Dette regnes som et gjennombrudd fordi AI genererer <strong>ny vitenskapelig kunnskap</strong>, ikke
+                    bare analyserer data.</li>
+                <li>Resultatene er lovende, men er fortsatt på <strong>preklinisk</strong> stadium – kliniske studier
+                    gjenstår.</li>
+                <li>Kan få betydning for <strong>norsk forskning, bioteknologi og helsepolitikk</strong>, men reiser
+                    etiske og regulatoriske spørsmål.</li>
+                <li>Viser en fremtid der AI fungerer som en <strong>medoppdager</strong> i medisinsk forskning.</li>
+            </ul>
+
         </section>
 
         <div class="container">
@@ -145,10 +159,10 @@
         const knappElm = document.getElementById("lesmer")
         const accordionElm = document.getElementById("accordion")
 
-        function accordion(){
+        function accordion() {
             accordionElm.classList.toggle("kort")
         }
-        knappElm.addEventListener("click",accordion)
+        knappElm.addEventListener("click", accordion)
 
     </script>
 

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Bin&aelig;re tall</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="binare.css">
+  <link rel="stylesheet" href="generell.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="lenke">hei</div>
+    <div class="lenke">he</div>
+    <div class="lenke">he</div>
+  </header>
+  <section class="intro">
+  <h1>Hva er binære tall?</h1>
+  <p>
+    Det binære tallsystemet er grunnmuren for all moderne datateknologi.
+    I stedet for å bruke tallene 0–9 slik som i det desimale systemet, består
+    de binære tallene kun av sifrene 0 og 1. Hvert siffer representerer en
+    potens av 2, noe som gjør systemet både enkelt og ekstremt effektivt for
+    datamaskiner.
+  </p>
+</section>
+
+<section class="info">
+  <h2>Bits og bytes</h2>
+  <p>
+    En <strong>bit</strong> er den minste informasjonsenheten og kan være enten
+    0 eller 1. Åtte biter utgjør en <strong>byte</strong>, som kan lagre
+    verdier fra 0 til 255. Dette er grunnlaget for hvordan datamaskiner lagrer
+    tall, tekst, bilder og lyd.
+  </p>
+</section>
+
+<section class="usage">
+  <h2>Hva brukes binære tall til?</h2>
+  <p>
+    Alt fra dataprogrammer, bilder, sensorer, internettkommunikasjon,
+    lagring av filer, og til og med fargekoder er representert med binære tall.
+    Når du trykker på en tast, lagres en fil, ser en video, eller bruker en app,
+    skjer alt gjennom kombinasjoner av 0 og 1.
+  </p>
+</section>
+  <main>
+    <h1>Bin&aelig;re tall</h1>
+
+    <p>
+      Bin&aelig;re tall best&aring;r kun av sifrene 0 og 1, og hvert siffer
+      representerer en potens av 2. Ved &aring; summere de aktiverte potensene
+      kan vi regne om et bin&aelig;rt tall til det desimale tallsystemet vi
+      bruker til daglig.
+    </p>
+
+    <div class="converter-grid">
+      <section class="converter">
+        <h2>Bin&aelig;rt &rarr; desimalt</h2>
+        <label for="binaryInput">Bin&aelig;rt tall (8 siffer)</label>
+        <input id="binaryInput" type="text" maxlength="8" placeholder="f.eks. 01001101" autocomplete="off" />
+
+        <label for="decimalOutput" style="margin-top: 1.25rem">Desimalt tall</label>
+        <input id="decimalOutput" type="text" readonly value="" />
+
+        <div class="error" id="binaryFeedback"></div>
+
+        <button id="binaryConvertBtn" type="button">
+          Konverter til desimalt
+        </button>
+      </section>
+
+      <section class="converter">
+        <h2>Desimalt &rarr; bin&aelig;rt</h2>
+        <label for="decimalInput">Desimalt tall (opptil 6 siffer)</label>
+        <input id="decimalInput" type="text" maxlength="6" placeholder="f.eks. 255" autocomplete="off" />
+
+        <label for="binaryOutput" style="margin-top: 1.25rem">Bin&aelig;rt tall</label>
+        <input id="binaryOutput" type="text" readonly value="" />
+
+        <div class="error" id="decimalFeedback"></div>
+
+        <button id="decimalConvertBtn" type="button">
+          Konverter til bin&aelig;rt
+        </button>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const binaryInput = document.getElementById("binaryInput");
+    const decimalOutput = document.getElementById("decimalOutput");
+    const binaryFeedback = document.getElementById("binaryFeedback");
+    const binaryConvertBtn = document.getElementById("binaryConvertBtn");
+
+    const decimalInput = document.getElementById("decimalInput");
+    const binaryOutput = document.getElementById("binaryOutput");
+    const decimalFeedback = document.getElementById("decimalFeedback");
+    const decimalConvertBtn = document.getElementById("decimalConvertBtn");
+
+    const isValidBinary = (value) => /^[01]{8}$/.test(value);
+    const isValidDecimal = (value) => /^\d{1,6}$/.test(value);
+
+    function updateBinaryButtonState() {
+      binaryConvertBtn.disabled = !isValidBinary(binaryInput.value.trim());
+    }
+
+    function updateDecimalButtonState() {
+      decimalConvertBtn.disabled = !isValidDecimal(decimalInput.value.trim());
+    }
+
+    function convertBinaryToDecimal() {
+      const value = binaryInput.value.trim();
+      if (!isValidBinary(value)) {
+        binaryFeedback.textContent =
+          "Oppgi n&oslash;yaktig 8 sifre best&aring;ende av 0 og 1.";
+        decimalOutput.value = "";
+        return;
+      }
+
+      const decimal = parseInt(value, 2);
+      decimalOutput.value = decimal.toString(10);
+      binaryFeedback.textContent = "";
+    }
+
+    function convertDecimalToBinary() {
+      const value = decimalInput.value.trim();
+      if (!isValidDecimal(value)) {
+        decimalFeedback.textContent =
+          "Oppgi mellom 1 og 6 sifre best&aring;ende av tall 0-9.";
+        binaryOutput.value = "";
+        return;
+      }
+
+      const binary = parseInt(value, 10).toString(2);
+      binaryOutput.value = binary;
+      decimalFeedback.textContent = "";
+    }
+
+    binaryConvertBtn.addEventListener("click", convertBinaryToDecimal);
+    decimalConvertBtn.addEventListener("click", convertDecimalToBinary);
+
+    binaryInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        convertBinaryToDecimal();
+      }
+    });
+
+    decimalInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        convertDecimalToBinary();
+      }
+    });
+
+    binaryInput.addEventListener("input", updateBinaryButtonState);
+    decimalInput.addEventListener("input", updateDecimalButtonState);
+    updateBinaryButtonState();
+    updateDecimalButtonState();
+  </script>
+</body>
+
+</html>
