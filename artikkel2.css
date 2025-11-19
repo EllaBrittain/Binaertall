@@ -58,7 +58,7 @@ img {
 
 
 
-.A1, .A2 {
+.A1, .A2, .A3 {
     background-color: lightblue;
     border-radius: 15px;
     display: flex;
@@ -83,8 +83,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .s3>img {
     width: 100%;
 }
+
