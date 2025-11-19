@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 main {
     width: 100%;
     display: flex;
@@ -8,7 +10,7 @@ main {
 
 .s1 {
     max-width: 100000px;
-    width: 90%;
+    width: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -39,6 +41,7 @@ img{
 }
 
 .s2 {
+    width: 100%;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;

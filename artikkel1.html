@@ -70,9 +70,11 @@
                     identifiserer nye behandlingskombinasjoner for kreft. Modellen genererte en hypotese som senere ble
                     bekreftet i biologiske studier.
                 </p>
+                  <img src="bilder/medisin.webp" alt="medisin">
             </section>
 
             <section id="hvordan">
+            
                 <h2>Hvordan virker det?</h2>
                 <p>
                     Modellen brukte store datasett fra enkeltceller og anvendte teknikker fra både språk- og
@@ -83,6 +85,7 @@
                     Den foreslo legemiddel-kombinasjonen silmitasertib (CK2-hemmer) pluss interferon for å gjøre «kalde»
                     tumorer mer synlige for immunforsvaret.
                 </p>
+                    <img src="bilder/mikrosop.jpeg" alt="mikrosop">
             </section>
 
             <section id="gjennombrudd">
@@ -151,7 +154,9 @@
                         rolle har mennesket? </li>
                 </ul>
             </section>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
 
     </main>
 
@@ -163,6 +168,22 @@
             accordionElm.classList.toggle("kort")
         }
         knappElm.addEventListener("click", accordion)
+
+          let lesMer = true
+            function accordion() {
+                accordionElm.classList.toggle("kort")
+
+                // Setter les mer til "motsatt" av det den var (true settes til false og motsatt)
+                lesMer = !lesMer
+                // Endre teksten på "les mer" knappen:
+                if (lesMer) {
+                    knappElm.innerHTML = "Les Mer"
+                } else {
+                    knappElm.innerHTML = "Les Mindre"
+                }
+            }
+
+            knappElm.addEventListener("click", accordion)
 
     </script>
 
