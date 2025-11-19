@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 main {
     width: 100%;
@@ -19,23 +21,30 @@ main {
     gap: 15px;
 }
 
-h1 {
+.overskrift {
     font-size: 40px;
+    font-family: "Montserrat", sans-serif;
 }
 
 p {
     font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.innledning {
+    font-weight: 500;
 }
 
 .bildetekst {
     font-size: 15px;
 }
 
-.s1 > p, img {
+.s1>p,
+img {
     width: 85%;
 }
 
-img{
+img {
     border-radius: 15px;
 
 }
@@ -49,7 +58,7 @@ img{
 
 
 
-.A1, .A2 {
+.A1, .A2, .A3 {
     background-color: lightblue;
     border-radius: 15px;
     display: flex;
@@ -60,19 +69,25 @@ img{
 
 h3 {
     font-size: 20px;
+    font-family: "Montserrat", sans-serif;
 }
 
 li {
-    font-size: 23px;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
     margin: 5px 5px;
+
 }
 
 .s3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.s3 > img {
+.s3>img {
     width: 100%;
 }
+
