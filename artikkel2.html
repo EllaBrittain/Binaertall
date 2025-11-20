@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artikkel 2</title>
+    <title>DataDive - Ny ChatGPT modell</title>
     <link rel="stylesheet" href="generell.css">
     <link rel="stylesheet" href="artikkel2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <header>
         <section class="header">
 
@@ -27,9 +28,9 @@
             </div>
 
             <nav>
-                <div class="lenke"><a href=""></a><b>Nå:</b> Ny Ai-modell</div>
-                <div class="lenke"><a href=""></a>Binære tall</div>
-                <div class="lenke"><a href=""></a>Om oss</div>
+                <div class="lenke"><a href="artikkel3.html"><b>Nå:</b> Ny Ai-modell</a></div>
+                <div class="lenke"><a href="binare.html">Binære tall</a></div>
+                <div class="lenke"><a href="omoss.html">Om oss</a></div>
             </nav>
 
             <div class="abonnent">
@@ -58,6 +59,22 @@
             </p>
 
         </Section>
+
+        <section id="accordion" class="kort">
+            <h2 id="korttitle">Kortversjonen</h2>
+            <button id="lesmer">Les mer</button>
+            <ul>
+                <li>Torsdag 7. august lanserte OpenAI ChatGPT-5 </li>
+                <li>Selskapet selv hevder at det er deres smarteste, raskeste og nyttigste modell så langt</li>
+                <li>Modellen har noen nøkkelfordeler som: mindre halisunasjon og evnen til å håndtere mer informasjon
+                </li>
+                <li>Modellen scoret best på en analyse av dens relative intellegens</li>
+                <li>Chat-GPT kan altså sies at kommer med veldig gode forbedringer, men mangler nye revolusjonerende
+                    evner</li>
+            </ul>
+
+        </section>
+
 
         <section class="s2">
 
@@ -107,76 +124,91 @@
                     Vi ser fra figuren over at GPT-5 (high), altså den mest avanserte versjonen av Chat-GPT med flest
                     neuroner og lag, presterer best i test av forskjellige KI-ers intellegens. Deres nest beste
                     versjon: GPT-5 (medium) presterer også bedre enn alle andre KI-er. Open-AI Fortsetter å ligge helt i
-                    inovasjonsteten innenfor KI-utvikling
+                    inovasjonsteten innenfor KI-utvikling. Likevel mangler den nye modellen banebrytende nye evner som
+                    vil være savnet blant investorer.
                 </p>
             </article>
 
         </section>
 
-         <section class="reklame">
+
+        <section class="reklame">
             <div class="reklamelogo">annonse</div>
             <img id="reklamebilde1" src="" alt="reklame">
         </section>
 
 
-        <section id="accordion" class="kort">
-            <h2 id="korttitle">Kortversjonen</h2>
-            <button id="lesmer">Les mer</button>
-            <ul>
-                <li>AI-modellen <strong>C2S-Scale 27B</strong> analyserer enkeltcelledata og foreslår nye kombinasjoner
-                    av kreftbehandling.</li>
-                <li>Modellen fant kombinasjonen <strong>silmitasertib + interferon</strong> som kan gjøre «kalde»
-                    svulster mer synlige for immunforsvaret.</li>
-                <li>Dette regnes som et gjennombrudd fordi AI genererer <strong>ny vitenskapelig kunnskap</strong>, ikke
-                    bare analyserer data.</li>
-                <li>Resultatene er lovende, men er fortsatt på <strong>preklinisk</strong> stadium – kliniske studier
-                    gjenstår.</li>
-                <li>Kan få betydning for <strong>norsk forskning, bioteknologi og helsepolitikk</strong>, men reiser
-                    etiske og regulatoriske spørsmål.</li>
-                <li>Viser en fremtid der AI fungerer som en <strong>medoppdager</strong> i medisinsk forskning.</li>
-            </ul>
-
-        </section>
 
         <script>
-        const knappElm = document.getElementById("lesmer")
-        const accordionElm = document.getElementById("accordion")
+            const knappElm = document.getElementById("lesmer")
+            const accordionElm = document.getElementById("accordion")
 
-        function accordion() {
-            accordionElm.classList.toggle("kort")
-        }
-        knappElm.addEventListener("click", accordion)
-
-        let lesMer = true
-        function accordion() {
-            accordionElm.classList.toggle("kort")
-
-            // Setter les mer til "motsatt" av det den var (true settes til false og motsatt)
-            lesMer = !lesMer
-            // Endre teksten på "les mer" knappen:
-            if (lesMer) {
-                knappElm.innerHTML = "Les Mer"
-            } else {
-                knappElm.innerHTML = "Les Mindre"
+            function accordion() {
+                accordionElm.classList.toggle("kort")
             }
-        }
+            knappElm.addEventListener("click", accordion)
 
-        knappElm.addEventListener("click", accordion)
+            let lesMer = true
+            function accordion() {
+                accordionElm.classList.toggle("kort")
+
+                // Setter les mer til "motsatt" av det den var (true settes til false og motsatt)
+                lesMer = !lesMer
+                // Endre teksten på "les mer" knappen:
+                if (lesMer) {
+                    knappElm.innerHTML = "Les Mer"
+                } else {
+                    knappElm.innerHTML = "Les Mindre"
+                }
+            }
+
+            knappElm.addEventListener("click", accordion)
 
 
-        // Tilfeldig tall mellom 1 og 3
-        let randomNumber = Math.floor(Math.random() * 3) + 1;
-        document.getElementById("reklamebilde1").src = "bilder/reklame" + randomNumber + ".png"
-        randomNumber = Math.floor(Math.random() * 3) + 1;
-        document.getElementById("reklamebilde2").src = "bilder/reklame" + randomNumber + ".png"
-        randomNumber = Math.floor(Math.random() * 3) + 1;
-        document.getElementById("reklamebilde3").src = "bilder/reklame" + randomNumber + ".png"
+            // Tilfeldig tall mellom 1 og 3
+            let randomNumber = Math.floor(Math.random() * 3) + 1;
+            document.getElementById("reklamebilde1").src = "bilder/reklame" + randomNumber + ".png"
+            randomNumber = Math.floor(Math.random() * 3) + 1;
+            document.getElementById("reklamebilde2").src = "bilder/reklame" + randomNumber + ".png"
+            randomNumber = Math.floor(Math.random() * 3) + 1;
+            document.getElementById("reklamebilde3").src = "bilder/reklame" + randomNumber + ".png"
 
 
-    </script>
+        </script>
 
 
     </main>
+       <footer class="footer">
+        <div class="container">
+            <div class="venstre">
+                <h3>DataDive</h3>
+                <p>Din daglige kilde til teknologi, nyheter og digitale trender.</p>
+            </div>
+
+            <div class="middle">
+                <h4>Sider</h4>
+                <ul>
+                    <li><a href="artikkel3.html"><b>Nå:</b> Ny Ai-modell</a></li>
+                    <li><a href="binare.html">Binæretall</a></li>
+                    <li><a href="omoss.html">Om oss</a></li>
+                </ul>
+            </div>
+
+            <div class="hoyre">
+                <h4>Om oss</h4>
+                <p class="oss">
+                <p>Denne avisen er laget, skrevet og designet av:</p>
+                <p>Anna Eilertsen, Ella Brittain, Adinah Johanne Svae og Petter Huun</p>
+
+                <p><b>Kontakt:</b><a href="mailto:epost@example.com">DataDive@hjelp.com</a></p>
+                </p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <p>© 2025 IT-Avisen – All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 

@@ -1,7 +1,3 @@
-#reklamebildet3 {
-    height: 270px;
-}
-
 .artikler {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -11,6 +7,7 @@
 
 article {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.20);
+    background-color: white;
 }
 
 .stor {
@@ -29,11 +26,10 @@ article {
 .hoy {
     grid-column: span 2;
     grid-row: span 2;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    padding: 5px;
+    padding: 10px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -85,12 +81,11 @@ article {
 
 .overskrift {
     width: 100%;
-    height: 25%;
-    padding: 20px;
+    padding: 15px;
     background-color: white;
 }
 
-a>h1 {
+.artikler h1 {
     letter-spacing: 2px;
     line-height: 1.4;
     font-weight: bolder;
@@ -102,4 +97,114 @@ a>h1 {
 
 .liten h1 {
     font-size: 23px;
+}
+
+.sam {
+    object-position: right;
+}
+
+
+
+/* LITEN SKJEM */
+
+@media (max-width: 1000px) {
+    body {
+        width: 100%;
+    }
+
+    section{
+        max-width: 700px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+
+    section {
+        max-width: 1000px;
+    }
+
+    .artikler {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto !important;
+        gap: 15px;
+    }
+
+    .hoy {
+        width: 100vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .hoy>.ai {
+        width: 100%;
+    }
+
+    .ai-bilder-container {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+        justify-content: flex-start;
+    }
+
+    .medium {
+        grid-column: span 2 !important;
+    }
+
+    .stor {
+        grid-column: span 4 !important;
+    }
+
+    .linje {
+            max-width: 100%;
+
+    }
+
+    
+}
+
+
+
+@media (max-width: 700px) {
+    .artikler {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    section {
+        max-width: 700px;
+    }
+
+
+
+
+}
+
+
+@media (max-width: 400px) {
+    .artikler {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .medium {
+        grid-column: span 2;
+    }
+
+    .stor{ 
+        grid-column: span 2;
+    }
+
+    section {
+        max-width: 400px;
+    }
+
+
+
+
 }
