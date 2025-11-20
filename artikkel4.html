@@ -28,9 +28,9 @@
             </div>
 
             <nav>
-                <div class="lenke"><a href=""></a><b>Nå:</b> Ny Ai-modell</div>
-                <div class="lenke"><a href=""></a>Binære tall</div>
-                <div class="lenke"><a href=""></a>Om oss</div>
+                <div class="lenke"><a href="artikkel3.html"></a><b>Nå:</b> Ny Ai-modell</div>
+                <div class="lenke"><a href="binare.html"></a>Binære tall</div>
+                <div class="lenke"><a href="omoss.html"></a>Om oss</div>
             </nav>
 
             <div class="abonnent">
@@ -41,33 +41,6 @@
     </header>
 
     <main>
-
-    <header>
-        <section class="header">
-
-            <div style="display: flex; gap: 20px; align-items: center;">
-                <div class="hjemknapp">
-                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
-                </div>
-                <div class="quantico-bold">
-                    <a href="index.html">
-                        <h1>DataDive</h1>
-                    </a>
-                </div>
-            </div>
-
-            <nav>
-                <div class="lenke"><a href="artikkel3.html"><b>Nå:</b> Ny Ai-modell</a></div>
-                <div class="lenke"><a href="binare.html">Binære tall</a></div>
-                <div class="lenke"><a href="omoss.html">Om oss</a></div>
-            </nav>
-
-            <div class="abonnent">
-                <button>Bli abonnent</button>
-            </div>
-
-        </section>
-    </header>
         <Section class="s1">
 
             <h1 class="overskrift">OpenAI inngår gigantisk partnerskap med Broadcom for AI-brikker</h1>
@@ -166,14 +139,13 @@
 
         </section>
 
-
         <section class="reklame">
             <div class="reklamelogo">annonse</div>
             <img id="reklamebilde1" src="" alt="reklame">
         </section>
 
-
-   <footer class="footer">
+    </main>
+    <footer class="footer">
         <div class="container">
             <div class="venstre">
                 <h3>DataDive</h3>
@@ -204,45 +176,44 @@
             <p>© 2025 IT-Avisen – All rights reserved.</p>
         </div>
     </footer>
-        <script>
-            const knappElm = document.getElementById("lesmer")
-            const accordionElm = document.getElementById("accordion")
 
-            function accordion() {
-                accordionElm.classList.toggle("kort")
+    <script>
+        const knappElm = document.getElementById("lesmer")
+        const accordionElm = document.getElementById("accordion")
+
+        function accordion() {
+            accordionElm.classList.toggle("kort")
+        }
+        knappElm.addEventListener("click", accordion)
+
+        let lesMer = true
+        function accordion() {
+            accordionElm.classList.toggle("kort")
+
+            // Setter les mer til "motsatt" av det den var (true settes til false og motsatt)
+            lesMer = !lesMer
+            // Endre teksten på "les mer" knappen:
+            if (lesMer) {
+                knappElm.innerHTML = "Les Mer"
+            } else {
+                knappElm.innerHTML = "Les Mindre"
             }
-            knappElm.addEventListener("click", accordion)
+        }
 
-            let lesMer = true
-            function accordion() {
-                accordionElm.classList.toggle("kort")
-
-                // Setter les mer til "motsatt" av det den var (true settes til false og motsatt)
-                lesMer = !lesMer
-                // Endre teksten på "les mer" knappen:
-                if (lesMer) {
-                    knappElm.innerHTML = "Les Mer"
-                } else {
-                    knappElm.innerHTML = "Les Mindre"
-                }
-            }
-
-            knappElm.addEventListener("click", accordion)
+        knappElm.addEventListener("click", accordion)
 
 
-            // Tilfeldig tall mellom 1 og 3
-            let randomNumber = Math.floor(Math.random() * 3) + 1;
-            document.getElementById("reklamebilde1").src = "bilder/reklame" + randomNumber + ".png"
-            randomNumber = Math.floor(Math.random() * 3) + 1;
-            document.getElementById("reklamebilde2").src = "bilder/reklame" + randomNumber + ".png"
-            randomNumber = Math.floor(Math.random() * 3) + 1;
-            document.getElementById("reklamebilde3").src = "bilder/reklame" + randomNumber + ".png"
+        // Tilfeldig tall mellom 1 og 3
+        let randomNumber = Math.floor(Math.random() * 3) + 1;
+        document.getElementById("reklamebilde1").src = "bilder/reklame" + randomNumber + ".png"
+        randomNumber = Math.floor(Math.random() * 3) + 1;
+        document.getElementById("reklamebilde2").src = "bilder/reklame" + randomNumber + ".png"
+        randomNumber = Math.floor(Math.random() * 3) + 1;
+        document.getElementById("reklamebilde3").src = "bilder/reklame" + randomNumber + ".png"
 
 
-        </script>
+    </script>
 
-
-    </main>
 
 </body>
 
