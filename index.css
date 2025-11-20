@@ -85,7 +85,7 @@ article {
     background-color: white;
 }
 
-a>h1 {
+.artikler h1 {
     letter-spacing: 2px;
     line-height: 1.4;
     font-weight: bolder;
