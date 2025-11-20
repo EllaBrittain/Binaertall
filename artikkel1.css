@@ -183,7 +183,7 @@ li {
 .vidre {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 60px;
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
@@ -191,7 +191,6 @@ li {
 
 .nyhet {
     background: white;
-    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
