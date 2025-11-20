@@ -10,9 +10,12 @@ main {
     gap: 20px;
 }
 
+.s1 , .s2 , .s3 {
+    max-width: 10000px;
+    width: 80%;
+
+}
 .s1 {
-    max-width: 100000px;
-    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -39,10 +42,7 @@ p {
     font-size: 15px;
 }
 
-.s1>p,
-img {
-    width: 85%;
-}
+
 
 img {
     border-radius: 15px;
@@ -50,7 +50,6 @@ img {
 }
 
 .s2 {
-    width: 100%;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
@@ -89,5 +88,62 @@ li {
 
 .s3>img {
     width: 100%;
+}
+
+/*reklame css*/
+
+#accordion {
+    background: #1c1c1c;
+    border-radius: 18px;
+    padding: 24px;
+    margin: 40px auto;
+    max-width: 650px;
+    overflow: hidden;
+    transition: max-height 0.35s ease, box-shadow 0.3s ease;
+    max-height: 1200px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+#accordion.kort {
+    max-height: 335px;
+}
+
+#accordion.kort ul {
+    height: 150px;
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, black 70%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom,
+            black 70%,
+            transparent);
+}
+
+#korttitle {
+    font-size: 26px;
+    font-weight: 700;
+    color: #f0f0f0;
+    margin-bottom: 16px;
+}
+
+#lesmer {
+    padding: 10px 18px;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    margin-bottom: 10px;
+}
+
+#lesmer:hover {
+    background: #666;
+    transform: scale(1.05);
+}
+
+#accordion ul {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #eaeaea;
+    margin-top: 12px;
 }
 

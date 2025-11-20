@@ -7,20 +7,34 @@
     <title>AI gjennombrudd</title>
     <link rel="stylesheet" href="generell.css">
     <link rel="stylesheet" href="artikkel1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+
 </head>
 
 <body>
     <header>
         <section class="header">
-            <div class="quantico-bold">
-                <h1>Navn til avisen</h1>
+
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <div class="hjemknapp">
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                </div>
+                <div class="quantico-bold">
+                    <a href="index.html">
+                        <h1>DataDive</h1>
+                    </a>
+                </div>
             </div>
 
             <nav>
-                <div class="lenke"><a href=""></a>Link 1</div>
-                <div class="lenke"><a href=""></a>Link 2</div>
-                <div class="lenke"><a href=""></a>Link 3</div>
-                <div class="lenke"><a href=""></a>Link 4</div>
+                <div class="lenke"><a href=""></a><b>Nå:</b> Ny Ai-modell</div>
+                <div class="lenke"><a href=""></a>Binære tall</div>
+                <div class="lenke"><a href=""></a>Om oss</div>
             </nav>
 
             <div class="abonnent">
@@ -32,9 +46,9 @@
 
     <main>
 
-        <section id="s1">
+        <section class="top">
             <h1>AI gjennombrudd kan revolusjonere kreftbehandling </h1>
-            <div class="meta">Publisert 20. oktober 2025 Av Anna Eilertsen</div>
+            <div class="av">Publisert 20. november 2025 av Anna Eilertsen</div>
             <p class="ingress">
                 Et samarbeid mellom Google DeepMind og Yale University har ført til utviklingen av en ny AI-modell som
                 kan endre hvordan vi forstår og behandler kreft.
@@ -117,10 +131,8 @@
                     <p>
                         Mange svulster beskrives som «kalde» fordi de unngår immunforsvaret. Ved å gjøre dem «varme» –
                         altså
-                        synlige for immunforsvaret kan behandlingsutsiktene forbedres betraktelig.
-                    </p>
-                    <p>
-                        Dersom hypotesen og behandlingsmetoden holder i kliniske studier, kan det føre til nye terapier
+                        synlige for immunforsvaret kan behandlingsutsiktene forbedres betraktelig. Dersom hypotesen og
+                        behandlingsmetoden holder i kliniske studier, kan det føre til nye terapier
                         for
                         krefttyper som i dag er vanskelige å behandle.
                     </p>
@@ -138,11 +150,40 @@
 
             </div>
 
-            <style>
-                @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-            </style>
-
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="venstre">
+                <h3>DataDive</h3>
+                <p>Din daglige kilde til teknologi, nyheter og digitale trender.</p>
+            </div>
+
+            <div class="middle">
+                <h4>Sider</h4>
+                <ul>
+                    <li><a href=""><b>Nå:</b> Ny Ai-modell</a></li>
+                    <li><a href="">Binæretall</a></li>
+                    <li><a href="">Om oss</a></li>
+                </ul>
+            </div>
+
+            <div class="hoyre">
+                <h4>Om oss</h4>
+                <p class="oss">
+                <p>Denne avisen er laget, skrevet og designet av:</p>
+                <p>Anna Eilertsen, Ella Brittain, Adinah Johanne Svae og Petter Huun</p>
+
+                <p><b>Kontakt:</b><a href="mailto:epost@example.com">DataDive@hjelp.com</a></p>
+                </p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <p>© 2025 IT-Avisen – All rights reserved.</p>
+        </div>
+    </footer>
+
 
     <script>
         const knappElm = document.getElementById("lesmer")
