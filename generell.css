@@ -229,4 +229,13 @@ button:hover {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    nav {
+        margin-top: 20px;
+
+    }
+
+    .abonnent {
+        margin-top: 20px;
+    }
 }

@@ -115,13 +115,6 @@ article {
         gap: 30px;
     }
 
-    .ikon {
-        margin-bottom: 20px;
-    }
-    .abonnent {
-        margin-top: 20px;
-    }
-
     .stor {
         grid-column: span 4;
     }
