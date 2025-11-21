@@ -10,6 +10,16 @@ section {
     padding: 40px;
 }
 
+header section {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .header {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 h2 {
     font-family: 'Orbitron', sans-serif;
     font-size: 40px;

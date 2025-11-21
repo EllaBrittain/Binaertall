@@ -190,6 +190,6 @@ article {
 /* VELDIG LITEN MOBIL (under 400px) */
 @media (max-width: 400px) {
     .artikler {
-        gap: 10px;
+        gap: 70px;
     }
 }
