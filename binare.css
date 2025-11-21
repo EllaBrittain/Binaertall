@@ -8,7 +8,7 @@
       max-width: 1000px;
     }
 
-    
+
 
     *,
     *::before,
@@ -145,4 +145,248 @@
       margin-top: 0.75rem;
       color: #ff7a85;
       min-height: 1.2rem;
+    }
+
+    /* HEADER BESKYTTELSE */
+    header,
+    header *,
+    header::before,
+    header::after,
+    header *::before,
+    header *::after {
+      all: revert;
+    }
+
+    /* Spesifikk beskyttelse for vanlige elementer */
+    header div,
+    header section,
+    header nav,
+    header a,
+    header button,
+    header p,
+    header h1,
+    header h2,
+    header h3,
+    header ul,
+    header li,
+    header i {
+      margin: 0;
+      padding: 0;
+      max-width: none;
+      width: auto;
+      line-height: normal;
+      border-radius: 0;
+      box-sizing: border-box;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      background: white;
+      z-index: 1000;
+      background-color: rgb(229, 228, 228);
+      border-bottom: 1px solid rgb(96, 96, 96);
+      margin-bottom: 50px;
+      color: rgb(40, 40, 40);
+    }
+
+    .top {
+      width: 100%;
+    }
+
+    .header {
+      display: flex;
+      padding: 20px;
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+
+    .hjemknapp {
+      font-size: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hjemknapp i {
+      display: flex;
+      align-items: center;
+    }
+
+    .quantico-bold {
+      font-family: "Quantico", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 4px;
+      transform: scaleY(1.3);
+    }
+
+    header a {
+      color: rgb(0, 0, 0);
+      text-decoration-line: none;
+      transition: 0.2s;
+    }
+
+    header a:hover {
+      color: rgba(40, 40, 40, 0.913);
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+      gap: 55px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .lenke {
+      padding: 5px;
+      text-decoration-line: none;
+      width: fit-content;
+      align-content: center;
+      transition: 0.3s;
+    }
+
+    .lenke:hover {
+      text-decoration-line: underline;
+    }
+
+    .abonnent {
+      align-content: center;
+    }
+
+    header button {
+      padding: 15px;
+      letter-spacing: 2px;
+      border-radius: 25px;
+      border: none;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    header button:hover {
+      scale: 1.1;
+    }
+
+    /* Beskyttelse FOOTER */
+    .footer,
+    .footer *,
+    .footer::before,
+    .footer::after,
+    .footer *::before,
+    .footer *::after {
+      all: revert;
+    }
+
+    /* Spesifikk beskyttelse for footer-elementer */
+    .footer div,
+    .footer section,
+    .footer nav,
+    .footer a,
+    .footer button,
+    .footer p,
+    .footer h1,
+    .footer h2,
+    .footer h3,
+    .footer h4,
+    .footer ul,
+    .footer li {
+      margin: 0;
+      padding: 0;
+      max-width: none;
+      width: auto;
+      line-height: normal;
+      border-radius: 0;
+      box-sizing: border-box;
+    }
+
+    /* FOOTER */
+    .footer {
+      background-color: rgb(229, 228, 228);
+      border-top: 1px solid rgb(96, 96, 96);
+      color: rgb(40, 40, 40);
+      padding: 40px 20px 20px;
+      margin-top: 60px;
+    }
+
+    .footer .container {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 2fr;
+      gap: 40px;
+    }
+
+    .footer .venstre h3 {
+      margin-bottom: 15px;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    .footer .venstre p {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+    }
+
+    .footer .middle h4,
+    .footer .hoyre h4 {
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    .footer .hoyre>p {
+      margin-bottom: 8px;
+    }
+
+    .footer .middle ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer .middle li {
+      margin-bottom: 8px;
+    }
+
+    .footer .middle a {
+      color: rgb(60, 60, 60);
+      text-decoration: none;
+      transition: 0.2s;
+      font-size: 14px;
+    }
+
+    .footer .middle a:hover {
+      color: rgb(0, 0, 0);
+      text-decoration: underline;
+    }
+
+    .footer .oss {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .footer .oss a {
+      color: rgb(60, 60, 60);
+      text-decoration: none;
+    }
+
+    .footer .oss a:hover {
+      color: rgb(0, 0, 0);
+      text-decoration: underline;
+    }
+
+    .footer .bottom {
+      text-align: center;
+      margin-top: 30px;
+      border-top: 1px solid rgb(96, 96, 96);
+      padding-top: 15px;
+      font-size: 12px;
+      color: rgb(90, 90, 90);
     }
