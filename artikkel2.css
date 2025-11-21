@@ -96,7 +96,7 @@ li {
     background: #1c1c1c;
     border-radius: 18px;
     padding: 24px;
-    margin: 40px auto;
+    margin: 82px; /*Fiks dette bedre*/
     max-width: 1000px;
     overflow: hidden;
     transition: max-height 0.35s ease, box-shadow 0.3s ease;
@@ -145,5 +145,12 @@ li {
     line-height: 1.7;
     color: #eaeaea;
     margin-top: 12px;
+}
+
+@media (width < 700px) {
+    .s2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
