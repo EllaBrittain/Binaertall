@@ -94,6 +94,16 @@
       margin: 0 0.5rem;
     }
 
+    table {
+      border-spacing: 30px;
+      border-collapse: separate;
+    }
+
+    tr p {
+      display: flex;
+      flex-direction: row;
+    }
+
     input[readonly] {
       letter-spacing: normal;
       cursor: not-allowed;

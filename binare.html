@@ -48,6 +48,57 @@
       skjer alt gjennom kombinasjoner av 0 og 1.
     </p>
   </section>
+  <section class="usage">
+    <h2>Hvordan kan man regne ut binære tall?</h2>
+    <p>
+      I vårt vanlige tallsystem har vi enerplass, tierplass, hundrerplass og så videre. I totallsystemet har vi isteden
+      ener-, toer-, firer- og åtterplass og så videre. I titallsystemet baserer vi oss på at sifrene representerer
+      potenser av 10. I totallsystemet har vi potenser av 2. I totallssystemet regner man fra venstre til høyre (16, 8,
+      4, 2, 1 osv). </p>
+    <p>La oss si at vi har den binære koden: 10011 <sub>2</sub></p>
+    <p>Da starter man fra venstre til høyre. 16*1 + 0*8 + 0*4 + 1*2 + 1*1 = 16 + 0 + 0 + 2 + 1 = 19 <sub>10</sub></p>
+
+    <p>Grunnen til at 2 og 10 senkes ned er på grunn av basene vi bruker. Siden man bruker totalssystemet på de binære
+      tallene, nedsenkes den til 2. Svaret nedsenkes til 10, fordi svaret regnes tilbake i desimalene vi bruker til
+      vanlig</p>
+
+    <p>Hvis man skal regne ut motsatt, altså fra desimaler til binære tall, så deler man ofte tallet på to, helt til man
+      når restene.</p>
+    <p>La oss si at vi har tallet: 19 <sub>10</sub></p>
+
+    <table>
+      <tr>
+        <td>19 : 2</td>
+        <td>9</td>
+        <td> 1</td>
+      </tr>
+      <tr>
+        <td>9 : 2</td>
+        <td>4</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>4 : 2</td>
+        <td>2</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>2 : 2</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>1 : 2</td>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+
+    </table>
+
+    <p>Rekkefølgen for å finne det binære tallet, starten nedenfra. </p>
+    <p>Klarer du å se hva det binære tallet blir?</p>
+
+  </section>
   <main>
     <h1>Bin&aelig;re tall</h1>
 
@@ -90,37 +141,37 @@
       </section>
     </div>
   </main>
-     <footer class="footer">
-        <div class="container">
-            <div class="venstre">
-                <h3>DataDive</h3>
-                <p>Din daglige kilde til teknologi, nyheter og digitale trender.</p>
-            </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="venstre">
+        <h3>DataDive</h3>
+        <p>Din daglige kilde til teknologi, nyheter og digitale trender.</p>
+      </div>
 
-            <div class="middle">
-                <h4>Sider</h4>
-                <ul>
-                    <li><a href="artikkel3.html"><b>Nå:</b> Ny Ai-modell</a></li>
-                    <li><a href="binare.html">Binæretall</a></li>
-                    <li><a href="omoss.html">Om oss</a></li>
-                </ul>
-            </div>
+      <div class="middle">
+        <h4>Sider</h4>
+        <ul>
+          <li><a href="artikkel3.html"><b>Nå:</b> Ny Ai-modell</a></li>
+          <li><a href="binare.html">Binæretall</a></li>
+          <li><a href="omoss.html">Om oss</a></li>
+        </ul>
+      </div>
 
-            <div class="hoyre">
-                <h4>Om oss</h4>
-                <p class="oss">
-                <p>Denne avisen er laget, skrevet og designet av:</p>
-                <p>Anna Eilertsen, Ella Brittain, Adinah Johanne Svae og Petter Huun</p>
+      <div class="hoyre">
+        <h4>Om oss</h4>
+        <p class="oss">
+        <p>Denne avisen er laget, skrevet og designet av:</p>
+        <p>Anna Eilertsen, Ella Brittain, Adinah Johanne Svae og Petter Huun</p>
 
-                <p><b>Kontakt:</b><a href="mailto:epost@example.com">DataDive@hjelp.com</a></p>
-                </p>
-            </div>
-        </div>
+        <p><b>Kontakt:</b><a href="mailto:epost@example.com">DataDive@hjelp.com</a></p>
+        </p>
+      </div>
+    </div>
 
-        <div class="bottom">
-            <p>© 2025 IT-Avisen – All rights reserved.</p>
-        </div>
-    </footer>
+    <div class="bottom">
+      <p>© 2025 IT-Avisen – All rights reserved.</p>
+    </div>
+  </footer>
 
   <script>
     const binaryInput = document.getElementById("binaryInput");
