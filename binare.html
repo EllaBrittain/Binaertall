@@ -9,14 +9,40 @@
   <link rel="stylesheet" href="generell.css">
   <link rel="stylesheet" href="binare.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  </style>
 
 </head>
 
 <body>
-  <header class="header">
-    <div class="lenke">
-      <a href="index.html">DataDive</a>
-    </div>
+  <header>
+    <section class="header" id="header">
+
+      <div style="display: flex; gap: 20px; align-items: center;">
+        <div class="hjemknapp">
+          <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        </div>
+        <div class="quantico-bold">
+          <a href="index.html">
+            <h1>DataDive</h1>
+          </a>
+        </div>
+      </div>
+
+      <nav>
+        <div class="lenke"><a href="artikkel3.html"><b>Nå:</b> Ny Ai-modell</a></div>
+        <div class="lenke"><a href="binare.html">Binære tall</a></div>
+        <div class="lenke"><a href="omoss.html">Om oss</a></div>
+      </nav>
+
+      <div class="abonnent">
+        <button>Bli abonnent</button>
+      </div>
+
+    </section>
   </header>
   <section class="intro">
     <h1>Hva er binære tall?</h1>
@@ -73,7 +99,7 @@
           <th>kvotient</th>
           <th>rest</th>
         </tr>
-      </thead>        
+      </thead>
       <tr>
         <td>19 : 2</td>
         <td>9</td>
@@ -252,9 +278,6 @@
     updateBinaryButtonState();
     updateDecimalButtonState();
   </script>
-  <footer>
-    <div class="footer"></div>
-  </footer>
 </body>
 
 </html>
