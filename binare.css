@@ -3,12 +3,16 @@
       font-family: "Nunito", system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", sans-serif;
     }
+<<<<<<< Updated upstream
 
     #header {
       max-width: 1000px;
     }
 
 
+=======
+    
+>>>>>>> Stashed changes
 
     *,
     *::before,
@@ -17,8 +21,7 @@
     }
 
     section {
-      margin: 3rem auto;
-      max-width: 800px;
+      text-align: center;
     }
 
     section h1,
@@ -31,6 +34,7 @@
       line-height: 1.7;
       font-size: 1.05rem;
       color: #c8cad3;
+
     }
 
     body {
